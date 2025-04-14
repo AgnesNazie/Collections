@@ -2,8 +2,6 @@ package com.agnes.practice;
 
 import java.util.*;
 
-import static java.util.Collections.sort;
-
 public class ArrayListDemo {
     public static void main(String[] args) {
         exe1();
@@ -13,6 +11,13 @@ public class ArrayListDemo {
         exe5();
         exe6();
         exe7();
+        exe8();
+        exe9();
+        exe10();
+        //exe11();
+        //exe12();
+        //exe13();
+        //exe14();
 
     }
 
@@ -70,13 +75,38 @@ public class ArrayListDemo {
         System.out.println(dayList);
 
     }
-    public static void exe7(){
-        HashSet<String> names = new LinkedHashSet<>(Arrays.asList("Agnes", "Fidelis", "Javan", "Nazie", "Mehrdad","Fuche","Che","Edwin"));
+
+    public static void exe7() {
+        HashSet<String> names = new LinkedHashSet<>(Arrays.asList("Agnes", "Fidelis", "Javan", "Nazie", "Mehrdad", "Fuche", "Che", "Edwin"));
         System.out.println("==================EXERCISE7============================");
-        System.out.println("ORIGINAL HASHSET" +names);
+        System.out.println("ORIGINAL HASHSET" + names);
         ArrayList<String> nameList = new ArrayList<>(names);
         System.out.println("Converted Hashset to ArrayList" + nameList);
         Collections.sort(nameList);
         System.out.println("Sorted Name List" + nameList);
+    }
+
+    public static void exe8() {
+        Set<String> firstNames = new TreeSet<>(Arrays.asList("Nazie", "Ngong", "Che", "Javan","Agnes"));
+        System.out.println("=================EXERCISE8=========================");
+        System.out.println(firstNames);
+    }
+    public static void exe9() {
+        HashMap<Integer, String> cars = new HashMap<>();
+        cars.put(1, "BMW");
+        cars.put(3, "Toyota");
+        cars.put(4, "Avensis");
+        cars.put(2, "Volvo");
+        System.out.println("===================EXERCISE9======================");
+        System.out.println(cars);
+    }
+    public static void exe10(){
+        HashMap<Integer, String> cars = new HashMap<>();
+        cars.put(1, "BMW");
+        cars.put(3, "Toyota");
+        cars.put(4, "Avensis");
+        cars.put(2, "Volvo");
+        System.out.println("===================EXERCISE10======================");
+        System.out.println(cars.keySet());
     }
 }
