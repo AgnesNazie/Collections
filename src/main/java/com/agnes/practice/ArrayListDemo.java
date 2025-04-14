@@ -7,8 +7,8 @@ public class ArrayListDemo {
     public static void main(String[] args) {
         exe1();
         exe2();
-
         exe3();
+        exe4();
 
     }
 
@@ -36,5 +36,14 @@ public class ArrayListDemo {
         daysOf.add(3, "Thursday");
         System.out.println("===================EXERCISE3=========================");
         System.out.println(daysOf);
+    }
+
+    public static void exe4() {
+        ArrayList<String> week = new ArrayList<>(Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
+        System.out.println("=============================EXERCISE4===========================");
+        System.out.println(week);
+        ArrayList<String> firstThree = new ArrayList<> (week.subList(0, 3));
+        System.out.println(firstThree);
+
     }
 }
