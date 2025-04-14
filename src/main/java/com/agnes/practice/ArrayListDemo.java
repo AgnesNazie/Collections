@@ -1,9 +1,8 @@
 package com.agnes.practice;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
+import java.util.*;
+
+import static java.util.Collections.sort;
 
 public class ArrayListDemo {
     public static void main(String[] args) {
@@ -13,6 +12,7 @@ public class ArrayListDemo {
         exe4();
         exe5();
         exe6();
+        exe7();
 
     }
 
@@ -66,8 +66,17 @@ public class ArrayListDemo {
         System.out.println("ORIGINAL HASHSET");
         System.out.println(days);
         ArrayList<String> dayList = new ArrayList<>(days);
-        System.out.println("Convert Hashset to List");
+        System.out.println("Convert Hashset to ArrayList");
         System.out.println(dayList);
 
+    }
+    public static void exe7(){
+        HashSet<String> names = new LinkedHashSet<>(Arrays.asList("Agnes", "Fidelis", "Javan", "Nazie", "Mehrdad","Fuche","Che","Edwin"));
+        System.out.println("==================EXERCISE7============================");
+        System.out.println("ORIGINAL HASHSET" +names);
+        ArrayList<String> nameList = new ArrayList<>(names);
+        System.out.println("Converted Hashset to ArrayList" + nameList);
+        Collections.sort(nameList);
+        System.out.println("Sorted Name List" + nameList);
     }
 }
