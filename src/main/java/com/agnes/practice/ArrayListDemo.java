@@ -14,7 +14,7 @@ public class ArrayListDemo {
         exe8();
         exe9();
         exe10();
-        //exe11();
+        exe11();
         //exe12();
         //exe13();
         //exe14();
@@ -108,5 +108,15 @@ public class ArrayListDemo {
         cars.put(2, "Volvo");
         System.out.println("===================EXERCISE10======================");
         System.out.println(cars.keySet());
+    }
+    public static void exe11(){
+        HashMap<Integer, String> cars = new HashMap<>();
+        cars.put(1, "BMW");
+        cars.put(3, "Toyota");
+        cars.put(4, "Avensis");
+        cars.put(2, "Volvo");
+        System.out.println("===================EXERCISE10======================");
+        System.out.println(cars.values());
+
     }
 }
